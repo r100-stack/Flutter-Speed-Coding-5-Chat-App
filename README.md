@@ -1,16 +1,20 @@
-# chat_app
+# Chat App
 
-A new Flutter application.
+Chat with your friends, family, and anyone else you want to chat with!
 
-## Getting Started
+<a href="https://youtu.be/-T7bIMsbCSg" target="_blank">Live Coding Video on YouTube</a>
 
-This project is a starting point for a Flutter application.
+## Skills Used
 
-A few resources to get you started if this is your first Flutter project:
+* Firebase's Cloud Firestore
+  * Add, update, and delete documents
+* Hero animations
+* Animated text library
+* Flexible and Expanded widgets
+* Themes
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Part 1: HomeScreen and AuthScreen (only register)
+
+<img src="images/screenshot.gif">
