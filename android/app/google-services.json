@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "668965378499",
+    "firebase_url": "https://sample-flutter-firebase-8ad49.firebaseio.com",
+    "project_id": "sample-flutter-firebase-8ad49",
+    "storage_bucket": "sample-flutter-firebase-8ad49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668965378499:android:57619d87227b608c00c576",
+        "android_client_info": {
+          "package_name": "com.rohankadkol.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFyd7xSMyBTjfOR2hBKFndxjZEbus4eyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668965378499:android:5ca87cac4a345ea400c576",
+        "android_client_info": {
+          "package_name": "com.rohankadkol.notes_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFyd7xSMyBTjfOR2hBKFndxjZEbus4eyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668965378499:android:ee39b0370a81beab00c576",
+        "android_client_info": {
+          "package_name": "com.rohankadkol.users_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFyd7xSMyBTjfOR2hBKFndxjZEbus4eyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668965378499-hrmc10s3fdmvd86jb8rn1e0igle713cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
