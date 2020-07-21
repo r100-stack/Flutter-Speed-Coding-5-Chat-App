@@ -20,6 +20,6 @@ Chat with your friends, family, and anyone else you want to chat with!
 
 <img src="images/screenshot.gif">
 
-### Part 2: GroupScreen and part of ChatScreen
+### Part 2: GroupScreen and part of the ChatScreen
 
 <img src="images/screenshot_1.gif">
