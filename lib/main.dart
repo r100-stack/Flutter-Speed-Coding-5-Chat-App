@@ -1,4 +1,6 @@
 import 'package:chat_app/screens/auth_screen.dart';
+import 'package:chat_app/screens/chat_screen.dart';
+import 'package:chat_app/screens/groups_screen.dart';
 import 'package:chat_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +16,9 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (RouteSettings settings) {
         var routes = <String, WidgetBuilder>{
           HomeScreen.routeName: (context) => HomeScreen(),
-          AuthScreen.routeName: (context) => AuthScreen(settings.arguments)
+          AuthScreen.routeName: (context) => AuthScreen(settings.arguments),
+          GroupsScreen.routeName: (context) => GroupsScreen(),
+          ChatScreen.routeName: (context) => ChatScreen(settings.arguments)
         };
         WidgetBuilder builder = routes[settings.name];
         return MaterialPageRoute(builder: (ctx) => builder(ctx));

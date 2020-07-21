@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:chat_app/constants.dart';
+import 'package:chat_app/screens/groups_screen.dart';
 import 'package:chat_app/utils/alert_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,8 @@ class _AuthScreenState extends State<AuthScreen> {
                           text: widget.isLogin
                               ? ['Login', 'Sign-in']
                               : ['Register', 'Sign-up'],
-                          textStyle: TextStyle(fontSize: 40, color: Colors.black),
+                          textStyle:
+                              TextStyle(fontSize: 40, color: Colors.black),
                         ),
                       )
                     ],
@@ -77,7 +79,8 @@ class _AuthScreenState extends State<AuthScreen> {
                   },
                   obscureText: true,
                   decoration: InputDecoration(
-                      hintText: 'Password', icon: Icon(FontAwesomeIcons.userLock)),
+                      hintText: 'Password',
+                      icon: Icon(FontAwesomeIcons.userLock)),
                 ),
                 Expanded(
                   child: Column(
@@ -93,16 +96,19 @@ class _AuthScreenState extends State<AuthScreen> {
                         ),
                         onPressed: () async {
                           final progress = ProgressHUD.of(context);
-                          progress.showWithText(widget.isLogin ? 'Logging in' : 'Registering');
-                          try {
-                            await _auth.createUserWithEmailAndPassword(
-                                email: email, password: password);
-                            Navigator.pop(context);
-                          } catch (e) {
-                            print(e);
-                            AlertUtils.getErrorAlert(context, e.code).show();
+                          progress.showWithText(
+                              widget.isLogin ? 'Logging in' : 'Registering');
+                          bool isAuthSuccess;
+                          if (widget.isLogin) {
+                            isAuthSuccess = await loginUser(context);
+                          } else {
+                            isAuthSuccess = await registerUser(context);
                           }
                           progress.dismiss();
+
+                          if (isAuthSuccess) {
+                            Navigator.pushNamed(context, GroupsScreen.routeName);
+                          }
                         },
                       ),
                     ],
@@ -114,5 +120,28 @@ class _AuthScreenState extends State<AuthScreen> {
         ),
       ),
     );
+  }
+
+  Future<bool> loginUser(BuildContext context) async {
+    try {
+      await _auth.signInWithEmailAndPassword(email: email, password: password);
+      return true;
+    } catch (e) {
+      print(e);
+      AlertUtils.getErrorAlert(context, e.code).show();
+      return false;
+    }
+  }
+
+  Future<bool> registerUser(BuildContext context) async {
+    try {
+      await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
+      return true;
+    } catch (e) {
+      print(e);
+      AlertUtils.getErrorAlert(context, e.code).show();
+      return false;
+    }
   }
 }

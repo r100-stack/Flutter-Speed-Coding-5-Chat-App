@@ -8,6 +8,7 @@ Chat with your friends, family, and anyone else you want to chat with!
 
 * Firebase's Cloud Firestore
   * Add, update, and delete documents
+  * Complex collection and document management
 * Hero animations
 * Animated text library
 * Flexible and Expanded widgets
@@ -18,3 +19,7 @@ Chat with your friends, family, and anyone else you want to chat with!
 ### Part 1: HomeScreen and AuthScreen (only register)
 
 <img src="images/screenshot.gif">
+
+### Part 2: GroupScreen and part of ChatScreen
+
+<img src="images/screenshot_1.gif">
