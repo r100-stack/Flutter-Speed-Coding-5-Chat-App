@@ -2,7 +2,10 @@
 
 Chat with your friends, family, and anyone else you want to chat with!
 
-<a href="https://youtu.be/-T7bIMsbCSg" target="_blank">Live Coding Video on YouTube</a>
+<a href="https://youtu.be/-T7bIMsbCSg" target="_blank">Live Coding Video on YouTube (Part 1)</a>
+<a href="https://youtu.be/S3pFTps6O2Q" target="_blank">Live Coding Video on YouTube (Part 2)</a>
+<a href="https://youtu.be/1QbNDGZq_80" target="_blank">Live Coding Video on YouTube (Part 3)</a>
+
 
 ## Skills Used
 
