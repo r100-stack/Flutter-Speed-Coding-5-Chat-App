@@ -32,18 +32,18 @@ Chat with your friends, family, and anyone else you want to chat with!
 
 ### Part 1: HomeScreen and AuthScreen (only register)
 
-<img src="images/screenshot.png" height="850">
-<img src="images/screenshot_1.png" height="850">
+<img src="images/screenshot.png" height="425">
+<img src="images/screenshot_1.png" height="425">
 
 ### Part 2: GroupScreen and part of the ChatScreen
 
-<img src="images/screenshot_2.png" height="850">
-<img src="images/screenshot_3.png" height="850">
+<img src="images/screenshot_2.png" height="425">
+<img src="images/screenshot_3.png" height="425">
 
 ### Part 3: ChatScreen
 
-<img src="images/screenshot_5.png">
-<img src="images/screenshot_6.png">
+<img src="images/screenshot_5.png" height="425">
+<img src="images/screenshot_6.png" height="425">
 
 <br>
 <br>
