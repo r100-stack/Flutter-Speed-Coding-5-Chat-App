@@ -30,6 +30,7 @@ dependencies:
   rflutter_alert: ^1.0.3
   flutter_progress_hud: ^1.0.2
   cached_network_image: ^2.2.0+1
+  timeago: ^2.0.26
 
 
   # The following adds the Cupertino Icons font to your application.

@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.indigo,
         primaryColorDark: Colors.indigo[700],
-        accentColor: Colors.lightGreenAccent
+        primaryColorLight: Colors.indigo[100],
+        accentColor: Colors.lightGreenAccent[100],
       ),
     );
   }

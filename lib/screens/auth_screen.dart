@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:chat_app/constants.dart';
 import 'package:chat_app/screens/groups_screen.dart';
 import 'package:chat_app/utils/alert_utils.dart';
+import 'package:chat_app/utils/auth_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_progress_hud/flutter_progress_hud.dart';
@@ -105,6 +106,8 @@ class _AuthScreenState extends State<AuthScreen> {
                             isAuthSuccess = await registerUser(context);
                           }
                           progress.dismiss();
+
+                          AuthUtils.firebaseUser = await _auth.currentUser();
 
                           if (isAuthSuccess) {
                             Navigator.pushNamed(context, GroupsScreen.routeName);

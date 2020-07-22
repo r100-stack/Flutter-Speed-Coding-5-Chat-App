@@ -1,6 +1,9 @@
 import 'package:chat_app/components/input_message_bar.dart';
+import 'package:chat_app/components/message_card.dart';
+import 'package:chat_app/components/messages_stream.dart';
 import 'package:chat_app/constants.dart';
 import 'package:chat_app/models/group.dart';
+import 'package:chat_app/models/message.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +18,6 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  Firestore _firestore = Firestore.instance;
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +25,13 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Text(widget.group.name),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-//          StreamBuilder(
-//            stream: _firestore.collection('messages').where('groupId', ),
-//          )
+          Expanded(child: MessagesStream(widget.group)),
           Padding(
             padding: EdgeInsets.all(kSmallMargin),
-            child: InputMessageBar(),
-          )
+            child: InputMessageBar(widget.group),
+          ),
         ],
       ),
     );
