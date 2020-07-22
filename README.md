@@ -44,16 +44,3 @@ Chat with your friends, family, and anyone else you want to chat with!
 
 <img src="images/screenshot_5.png" height="425">
 <img src="images/screenshot_6.png" height="425">
-
-<br>
-<br>
-
-<div class="row">
-  <div class="column">
-    <img src="images/screenshot.png" alt="Snow" height="850">
-  </div>
-  <div class="column">
-    <img src="images/screenshot_1.png" alt="Forest" height="850">
-  </div>
-
-</div>
